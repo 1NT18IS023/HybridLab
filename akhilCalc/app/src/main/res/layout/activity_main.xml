@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:background="#bcb5db"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:layout_weight="1"
+        android:background="#bcb5db"
+        android:gravity="right|center"
+        android:hint="0"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30pt"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1pt"
+            >
+
+            <Button
+                android:id="@+id/AC"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="AC"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="clearEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/plusminus"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="+/-"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="plusMinusEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/percent"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="%"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="percentEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/multiply"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="*"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="operatorEvent"
+
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1pt"
+            >
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="7"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="8"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+                />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="9"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="/"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="operatorEvent"
+
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1pt"
+            >
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="4"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="5"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="6"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="+"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="operatorEvent"
+
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1pt"
+            >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="1"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="2"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="3"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/subtract"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="-"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="operatorEvent"
+
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1pt"
+            >
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="0"
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/decimal"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="."
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="numberEvent"
+
+
+                />
+
+            <Button
+                android:id="@+id/equals"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:backgroundTint="#2e14af"
+                android:text="="
+                android:insetTop = "0dp"
+                android:insetBottom = "0dp"
+                android:onClick="equalEvent"
+
+                />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
