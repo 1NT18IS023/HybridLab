@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">list_view_demo</string>
+    <string-array name="classmates">
+        <item>raja</item>
+        <item>sai</item>
+        <item>harish</item>
+        <item>moulya</item>
+        <item>nirmal</item>
+    </string-array>
+</resources>
